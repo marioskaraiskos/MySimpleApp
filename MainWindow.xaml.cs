@@ -78,9 +78,9 @@ namespace MySimpleApp
             };
 
 
-            Grid.SetColumn(input, 0);
-            row.Children.Add(input);
-            DynamicContainer.Children.Add(row);
+            Grid.SetColumn(input, 0); //to bazoume stin deuteri seira
+            row.Children.Add(input); //bazoume to row sto input 
+            DynamicContainer.Children.Add(row); 
             input.Focus();
         }
 
