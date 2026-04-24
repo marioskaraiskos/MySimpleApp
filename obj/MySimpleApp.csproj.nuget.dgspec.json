@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marios\\Desktop\\CsharpProjects\\MySimpleApp\\MySimpleApp.csproj": {}
+    "C:\\Users\\mario\\MySimpleApp\\MySimpleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marios\\Desktop\\CsharpProjects\\MySimpleApp\\MySimpleApp.csproj": {
+    "C:\\Users\\mario\\MySimpleApp\\MySimpleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marios\\Desktop\\CsharpProjects\\MySimpleApp\\MySimpleApp.csproj",
+        "projectUniqueName": "C:\\Users\\mario\\MySimpleApp\\MySimpleApp.csproj",
         "projectName": "MySimpleApp",
-        "projectPath": "C:\\Users\\marios\\Desktop\\CsharpProjects\\MySimpleApp\\MySimpleApp.csproj",
-        "packagesPath": "C:\\Users\\marios\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marios\\Desktop\\CsharpProjects\\MySimpleApp\\obj\\",
+        "projectPath": "C:\\Users\\mario\\MySimpleApp\\MySimpleApp.csproj",
+        "packagesPath": "C:\\Users\\mario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mario\\MySimpleApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\marios\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\mario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

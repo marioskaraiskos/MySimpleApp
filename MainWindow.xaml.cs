@@ -10,14 +10,14 @@ namespace MySimpleApp
     {
         public MainWindow()
         {
-            InitializeComponent();
-            AddNewTextField(); // Start with the first one
+            InitializeComponent(); //το χρειαζεται η εφαρμογή για να φορτώσει τα components.
+            AddNewTextField(); //προσθέτουμε textfield  
         }
 
         private void AddNewTextField()
         {
             // Requirement: Max 5 times
-            if (DynamicContainer.Children.Count >= 5) 
+            if (DynamicContainer.Children.Count >= 5) //ελεγχος μεχρι 5 textfields
             {
                 LimitWarning.Visibility = Visibility.Visible;
                 return;
@@ -31,8 +31,8 @@ namespace MySimpleApp
 
             var input = new TextBox
             {
-                Style = (Style)Application.Current.Resources["MyPrettyField"],
-                Tag = row // Store row reference for easy removal
+                Style = (Style)Application.Current.Resources["MyPrettyField"], //pairnei style apo to app.xaml
+                Tag = row //
             };
 
             input.PreviewTextInput += (s, e) => {
@@ -77,18 +77,6 @@ namespace MySimpleApp
                 }
             };
 
-            // Event 2: Trigger word check ("pressed" / "submitted")
-            input.TextChanged += (s, e) => {
-                string val = input.Text.ToLower();
-                if (val.Contains("pressed") || val.Contains("submitted")) {
-                    int rowIndex = DynamicContainer.Children.IndexOf(row);
-                    if (rowIndex == 0)
-                    {
-                        return;
-                    }
-                    AddDeleteButton(row);
-                }
-            };
 
             Grid.SetColumn(input, 0);
             row.Children.Add(input);
