@@ -1,0 +1,19 @@
+﻿<Window x:Class="MySimpleApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MySimpleApp - Senior Dev Edition" Height="500" Width="450"
+        WindowStartupLocation="CenterScreen" Background="#F5F5F5">
+    
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="DYNAMIC FORM" FontSize="24" FontWeight="ExtraBold" 
+                       Foreground="#333" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+            
+            <StackPanel x:Name="DynamicContainer" />
+            
+            <TextBlock x:Name="LimitWarning" Text="Maximum 5 fields reached." 
+                       Foreground="Crimson" Visibility="Collapsed" Margin="0,10,0,0"
+                       HorizontalAlignment="Center" FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+</Window>
